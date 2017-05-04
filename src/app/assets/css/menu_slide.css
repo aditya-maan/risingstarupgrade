@@ -1,0 +1,148 @@
+ @media screen and (max-width:1800px) {
+	 .menu-open .page_header .container {
+		 padding-left:15px;
+	 }
+	 .menu-open .container {
+		 padding-left:15px;
+	 }
+ }
+ @media screen and (max-width:1700px) {
+	  .menu-open .container {
+		 padding-left:100px;
+	 }
+	 
+	 .menu-open .top_ban_txt h1 {
+		font-size:28px;
+	}
+	.menu-open .top_ban_txt p {
+		font-size:23px;
+	}
+	.menu-open .video_btn > span.ban_btn_left_txt span.big_txt {
+		font-size:15px;
+		margin-top:2px;
+	}
+	.menu-open .video_btn {
+		padding:5px 10px 5px 15px;
+	}
+	.menu-open .ban_team_logo li {
+		width:30px;
+		height:30px;
+	}
+	.menu-open .page_header .navbar-nav > li > a {
+		padding-left:5px;
+		padding-right:5px;
+		margin-left:5px;
+		margin-right:5px;
+	}
+	.menu-open .video_btn > span.ban_btn_left_icon {
+		padding:2px 0 4px;
+		width:30px;
+	}
+	.menu-open .video_btn > span.ban_btn_left_txt span.small_txt {
+		margin-top:-7px;
+	}
+	.menu-open .ban_bg {
+		padding-top:45px;
+	}
+	.menu-open .user_pic_margin {
+    margin-top: -90px;
+}
+.menu-open .team_logo_txt {
+	padding: 6px 0;
+	font-size:20px;
+}
+/*.menu-open .page_middle_content .teamlist a.list_btn {
+		font-size:12px;
+	}*/
+ }
+ @media screen and (max-width:1600px) {
+	 .menu-open .container {
+		 padding-left:200px;
+	 }
+ }
+ @media screen and (max-width:1500px) {
+ }
+ @media screen and (max-width:1400px) {
+	 .menu-open .container {
+		 padding-left:278px;
+	 }
+	 
+	 
+	 
+	 .menu-open .ban_team_logo li {
+    background-position: center center;
+    height: 20px;
+    margin: 2px 0;
+    width: 20px;
+}
+.menu-open .page_header .navbar-nav > li > a {
+		padding-left:3px;
+		padding-right:3px;
+		margin-left:2px;
+		margin-right:2px;
+	}
+	.menu-open .user_name_view {
+		font-size:20px;
+		line-height:56px;
+	}
+	.menu-open .user_name_view span {
+		font-size:16px;
+	}
+	.menu-open a.ban_btn {
+		margin-left:2px;
+		margin-right:2px;
+		font-size:13px;
+	}
+	.menu-open .ftr_nav a {
+		margin-bottom:10px;
+	}
+	.menu-open .social_icon {
+		width: 30px;
+	}
+	
+	
+	
+ }
+ @media screen and (max-width:1300px) {
+	 
+ }
+ @media screen and (max-width:1199px) {
+	 .menu-open .container {
+		 padding-left:15px;
+		 transition: 0.8s;
+	 }
+	 .fullprofilediv .nav-side-menu > #open-menu-click i.fa[aria-expanded="true"] {
+    display: block;
+}
+#open-inner-menu-click {
+	display:none;
+}
+	 .nav-side-menu {
+    display: block;
+    left: 0;
+    position: relative;
+    top: 0;
+    z-index: 10;
+}
+.buger_menu {
+    background: #fef0c6 none repeat scroll 0 0;
+    border-radius: 0;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+    z-index: 5;
+}
+.menu-content.in {
+    width: 100%;
+}
+.menu-list {
+    padding-right: 0;
+	padding-top:37px;
+}
+ }
+
+
+
+
+
+

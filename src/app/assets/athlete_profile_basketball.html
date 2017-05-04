@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Rising Stars</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/menu_slide.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="max-width:530px;"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header pouphd">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title">Add Practice</h2>
+      </div>
+      <div class="modal-body add_practice">
+        <form>
+          <div class="form-group">
+            <label for="email">Select Team</label>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-padding0">
+              <div class="clearfix">
+                <div class="col-md-2 col-sm-2 col-xs-3 team_logo col-lg-padding0"><img src="images/team_logo.jpg" alt="team logo">
+                  <div class="checkbox_team_logo">
+                    <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-3 team_logo col-lg-padding0"><img src="images/team_logo_2.jpg" alt="logo">
+                  <div class="checkbox_team_logo">
+                    <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-3 team_logo col-lg-padding0"><img src="images/team_logo_3.jpg" alt="logo">
+                  <div class="checkbox_team_logo">
+                    <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-3 team_logo col-lg-padding0"><img src="images/team_logo_4.jpg" alt="logo">
+                  <div class="checkbox_team_logo">
+                    <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-3 team_logo col-lg-padding0"><img src="images/team_logo_5.jpg" alt="logo">
+                  <div class="checkbox_team_logo">
+                    <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-3 team_logo col-lg-padding0"><img src="images/team_logo_6.jpg" alt="logo">
+                  <div class="checkbox_team_logo">
+                    <label class="control control--checkbox">
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Location</label>
+            <div class="form-group">
+              <input type='text' class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Venue</label>
+            <div class="form-group">
+              <input type='text' class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Select Date</label>
+            <div class="form-group">
+              <div class='input-group date'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span> </span> </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Practice Title</label>
+            <div class="form-group">
+              <input type='text' class="form-control" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="text">Enter start time </label>
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-4 padding-left-15 padding-right-5">
+                    <input type="text" class="form-control text-center" id="hh" placeholder="HH">
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-5">
+                    <input type="text" class="form-control text-center" id="mm" placeholder="MM">
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-5">
+                    <input type="text" class="form-control text-center" id="ampm" placeholder="AM">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="pwd">Enter end time</label>
+                <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-4 padding-left-15 padding-right-5">
+                    <input type="text" class="form-control text-center" id="hh" placeholder="HH">
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-5">
+                    <input type="text" class="form-control text-center" id="mm" placeholder="MM">
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-15">
+                    <input type="text" class="form-control text-center" id="ampm" placeholder="AM">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="clearfix recurring-row">
+              <label class="control control--checkbox">
+              &nbsp;Recurring
+              <input type="checkbox" checked="checked"/>
+              <div class="control__indicator"></div>
+              </label>
+              <div class="sub_recurring">
+                <div class="sub_recurring_row">
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Daly
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Weekly
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Monthly
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Yearly
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="sub_recurring_row bgwhite_recurring" style="display:none;">
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Monday
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Tuesday
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Wednesday
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Thursday
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Friday
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Saturday
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;Sunday
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="sub_recurring_row bgwhite_recurring" style="display:none;">
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;January
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;February
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;March
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;April
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;May
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;June
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;July
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;August
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;September
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;October
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;November
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <label class="control control--checkbox">
+                    &nbsp;December
+                    <input type="checkbox" checked="checked"/>
+                    <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="sub_recurring_row bgwhite_recurring" style="display:none;">
+                  <div class="col-md-12 col-sm-12 col-xs-12 padding-left-0 padding-right-0 padding-top-6 padding-bottom-6">
+                    <select class="form-control" id="sel1">
+                      <option>2016</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add_practice_form add_practice_form_left">
+            <button type="submit" class="btn btn-default plus_btn">+</button>
+            <div class="clearfix add_practice_form_in">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <label for="pwd">Session Title</label>
+                    <input type="text" class="form-control" id="title">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="text">Enter start time </label>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4 col-xs-4 padding-left-15 padding-right-5">
+                        <input type="text" class="form-control text-center" id="hh" placeholder="HH">
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-5">
+                        <input type="text" class="form-control text-center" id="mm" placeholder="MM">
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-5">
+                        <input type="text" class="form-control text-center" id="ampm" placeholder="AM">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <label for="pwd">Enter end time</label>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4 col-xs-4 padding-left-15 padding-right-5">
+                        <input type="text" class="form-control text-center" id="hh" placeholder="HH">
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-5">
+                        <input type="text" class="form-control text-center" id="mm" placeholder="MM">
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-xs-4 padding-left-5 padding-right-15">
+                        <input type="text" class="form-control text-center" id="ampm" placeholder="AM">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <label for="pwd">Session Description</label>
+                    <textarea id="form_message" name="message" class="form-control contact_txt_fild" placeholder="Message for me *" rows="4" required data-error="Please,leave us a message."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix text-right">
+            <button type="submit" class="poup_submit_btn btn btn-default smtbtnview">Save</button>
+            <button type="submit" class="poup_submit_btn btn btn-default smtbtnview">Save + Add New</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer" style="display:none;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix fullprofilediv">
+  <div class="clearfix page_header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-3 col-xs-12 text-xs-center"> <a class="logo" href="#"><img src="images/logo.png" alt="Rising Stars" title="Home" /></a> </div>
+        <div class="col-md-8 col-sm-9 col-xs-12">
+          <div class="clearfix header-right">
+            <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-12"> </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <form class="form-inline search_form_head">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-warning" type="button"> <i class="glyphicon glyphicon-search"></i> </button>
+                    </span> </div>
+                </form>
+              </div>
+              <div class="col-md-5 col-sm-5 col-xs-12">
+                <ul class="nav navbar-nav user-sub-menu">
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Sponsors</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-side-menu">
+    <div class="buger_menu" id="open-menu-click"> <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i> </div>
+    <div class="menu-list">
+      <ul id="menu-content" class="menu-content collapse out">
+        <li class="menu-hd">Services
+          <div class="buger_menu" id="open-inner-menu-click"> <i class="glyphicon glyphicon-remove" data-toggle="collapse" data-target="#menu-content"></i> </div>
+        </li>
+        <li data-toggle="collapse" data-target="#new" class="collapsed active"> <a href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Schools</a> </li>
+        <ul class="sub-menu collapse" id="new">
+          <li><a href="#"><img src="images/school_icon.png" alt="school_icon"> &nbsp;Chicago International Charter School</a></li>
+          <li><a href="#"><img src="images/school_icon_1.png" alt="school_icon_1"> &nbsp;Wolcott School</a></li>
+          <li><a href="#"><img src="images/school_icon_2.png" alt="school_icon"> &nbsp;Sacred Heart Schools Academy</a></li>
+          <li><a href="#"><img src="images/school_icon_3.png" alt="school_icon"> &nbsp;Meadville Lombard Theological School</a></li>
+        </ul>
+        <li>
+        <li  data-toggle="collapse" data-target="#products" class="collapsed"> <a href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Manage Practice</a> </li>
+        <ul class="sub-menu collapse" id="products">
+          <li class="active"><a href="#" data-toggle="modal" data-target="#myModal">Add Manage Practice</a></li>
+          <li><a href="#">Manage Practice Team</a></li>
+          <li><a href="#">Buttons</a></li>
+          <li><a href="#">Tabs & Accordions</a></li>
+          <li><a href="#">Typography</a></li>
+          <li><a href="#">FontAwesome</a></li>
+          <li><a href="#">Slider</a></li>
+          <li><a href="#">Panels</a></li>
+          <li><a href="#">Widgets</a></li>
+          <li><a href="#">Bootstrap Model</a></li>
+        </ul>
+        <li data-toggle="collapse" data-target="#service" class="collapsed"> <a href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Schedule </a> </li>
+        <ul class="sub-menu collapse" id="service">
+          <li><a href="#">New Service 1</a></li>
+          <li><a href="#">New Service 2</a></li>
+          <li><a href="#">New Service 3</a></li>
+        </ul>
+        <li data-toggle="collapse" data-target="#new" class="collapsed"> <a href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> M6Clip</a> </li>
+        <ul class="sub-menu collapse" id="new">
+          <li><a href="#">New New 1</a></li>
+          <li><a href="#">New New 2</a></li>
+          <li><a href="#">New New 3</a></li>
+        </ul>
+        <li> <a href="#"> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Mail Box </a> </li>
+        <li class="menu-hd">Add Ons</li>
+        <li> <a href="#"> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Playbook </a> </li>
+        <li> <a href="#"> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Scouting </a> </li>
+        <li> <a href="#"> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Depth Chart </a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="clearfix basketball_profile">
+  <div class="clearfix page_banner">
+    <div class="clearfix ban_botm_bg" style="background:#2f3437;">
+      <div class="clearfix ban_bg min_height_res">
+        <div class="clearfix ban_color opacity_bg" style="background:#000;">
+          <div class="clearfix ban_stick_box">
+            <div class="ban_stick" style="background:#d3ac41;"></div>
+            <div class="ban_stick" style="background:#d3ac41;"></div>
+            <div class="ban_stick" style="background:#d3ac41;"></div>
+            <div class="ban_stick" style="background:#d3ac41"></div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-4 col-xs-12 top_ban_txt profile_ath padding-0">
+                <h1>Blake Emsick</h1>
+                <p>Houston, Texas </p>
+                <p><span>Football</span></p>
+                <p class="email">christopherkulshre@sportathletes.com</p>
+                <p><a href="" class="video_btn"> <span class="ban_btn_left_txt"> <span class="big_txt">trending Video</span><br>
+                  </span> <span class="ban_btn_left_icon"><img src="images/video_icon.png" alt="video_icon"></span> </a></p>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12 text-center"> <img src="images/profile_pic1_png.png" alt="profile"></div>
+              <div class="col-md-5 col-sm-4 col-xs-12 col-lg-padding5 video-xs-center"><img src="images/video_img.jpg" alt="video"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix page_details ban_botm_bg">
+    <div class="clearfix ban_user_name_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3 col-xs-12 padding-12 border-radius-8 user_pic_margin" style="background:#2f3437;"> <img src="images/profile_pic_1.jpg" alt="img"></div>
+          <div class="col-md-10 col-sm-9 col-xs-12 padding-left-0 padding-xs-right-0">
+            <div class="clearfix user_name_view ath_profile_team_name user_profile_top" style="background-color:#2f3437;">
+              <div class="col-md-9 col-sm-8 col-xs-12">Chicago International Charter <span>Class of 2014</span></div>
+              <div class="col-md-3 col-sm-4 col-xs-12 text-right padding-right-0 rating-xs-view"><img src="images/rating.png" alt="rating"></div>
+            </div>
+            <div class="clearfix text-right text-xs-center">
+              <ul class="nav">
+                <li class="display-inline-block"><a href="" class="ban_btn"><span>SHOWCASE</span></a> <span class="btn_botm_bg"></span></li>
+                <li class="display-inline-block"><a href="" class="ban_btn"><span><i class="fa fa-trophy" aria-hidden="true"></i> Awards</span></a> <span class="btn_botm_bg"></span></li>
+                <li class="display-inline-block"><a href="" class="ban_btn"><span>Fun Facts</span></a> <span class="btn_botm_bg"></span></li>
+                <li class="display-inline-block"><a href="" class="ban_btn"><span>My Skills</span></a> <span class="btn_botm_bg"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="clearfix page_middle_content">
+    <div class="container">
+      <div class="clearfix mid_container mid_profile_bg">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 profile_left_bg">
+          <div class="profile_logo clearfix text-center"><img src="images/logo_ath.png" alt="logo"></div>
+          <ul class="profile_detail list-unstyled">
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12 detail_in_bg">
+                <div class="pull-left user_left_txt">DOB</div>
+                <div class="pull-right user_right_txt">03-November-2016</div>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12 detail_in_bg">
+                <div class="pull-left user_left_txt">Gender</div>
+                <div class="pull-right user_right_txt">Male</div>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12 detail_in_bg">
+                <div class="pull-left user_left_txt">Mobile Phone</div>
+                <div class="pull-right user_right_txt">555-555-5555</div>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12 detail_in_bg">
+                <div class="pull-left user_left_txt">Height (CM)</div>
+                <div class="pull-right user_right_txt"><span>186CM</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12 detail_in_bg">
+                <div class="pull-left user_left_txt">Weight (KG)</div>
+                <div class="pull-right user_right_txt"><span>110KG</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12 col-sm-12 col-xs-12 detail_in_bg">
+                <div class="pull-left user_left_txt">Age (Year)</div>
+                <div class="pull-right user_right_txt"><span>30</span></div>
+              </div>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+          <div class="skill_info">
+            <h2>Skill Info</h2>
+            <p>Cras blandit suscipit ante, sed fringilla ante pellentesque interdum. Aenean semper nibh et tincidunt feugiat. Curabitur at libero in velit consectetur suscipit. Vivamus eu suscipit libero, sit amet maximus arcu. Ut euismod turpis non eleifend euismod. </p>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
+          <div class="row">
+            <div class="profile_top">
+              <div class="col-md-6 col-xs-12 athe_list_view">
+                <h3>Basketball</h3>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="45%">Position</td>
+                    <td><span>SF</span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div class="athe_list_testing">
+                  <h3>Testing</h3>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>Vertical</td>
+                      <td>All the Lorem Ipsum</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="schools_interested">
+              <h2>Schools Interested In You</h2>
+              <div class="col-md-6 col-sm-12 col-xs-12 interested_name"><i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i> Chicago International Charter School</div>
+              <div class="col-md-6 col-sm-12 col-xs-12 interested_name"><i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i> Sacred Heart Schools Academy</div>
+              <div class="col-md-6 col-sm-12 col-xs-12 interested_name"><i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i> Wolcott School</div>
+              <div class="col-md-6 col-sm-12 col-xs-12 interested_name"><i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i> Meadville Lombard Theological School</div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="summary_info">
+              <h2>Summary</h2>
+              <p>Ut euismod turpis non eleifend euismod. Morbi nec sagittis velit. Quisque quis est sagittis, faucibus nibh at, sodales est. Nunc non nisl dictum, lobortis massa id, tristique risus. Morbi vitae eros leo. Praesent vestibulum id sapien vitae accumsan. Aliquam purus odio, pellentesque non lacus ac, ornare consequat nisi. Morbi efficitur, sapien nec pharetra hendrerit, odio mauris molestie ligula, ac tempus augue lectus at massa. Maecenas tincidunt lorem id tortor commodo, et porta eros sollicitudin. Sed placerat lorem at risus tempus, et consectetur quam ullamcorper. Donec placerat nibh neque, ac pretium nibh interdum ut. Curabitur tempor enim eu tincidunt feugiat. Praesent cursus lacus non dapibus imperdiet. Nullam sit amet tincidunt leo. Pellentesque ex ex, condimentum eget purus ac, tristique pharetra arcu. Donec vel eros consectetur erat bibendum congue eget vel enim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix page_footer">
+    <div class="clearfix footer_top_bg">
+      <div class="container">
+        <div class="clearfix">
+          <div class="col-sm-4 col-xs-12 ftr_contact">
+            <h2>Contact Us</h2>
+            <div class="ftr_mid_container clearfix">
+              <div class="col-sm-10 col-xs-12">
+                <div class="row">
+                  <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input id="form_name" type="text" name="name" class="form-control contact_fild" placeholder="Please enter your full name *" required data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input id="form_email" type="email" name="email" class="form-control contact_fild" placeholder="Please enter your email *" required data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input id="form_phone" type="tel" name="phone" class="form-control contact_fild" placeholder="Please enter your phone">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea id="form_message" name="message" class="form-control contact_txt_fild" placeholder="Message for me *" rows="4" required data-error="Please,leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <input type="submit" class="submit_btn btn btn-success btn-send" value="Send message">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12 ftr_nav">
+            <h2>Quick Links</h2>
+            <div class="ftr_mid_container clearfix">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">About</a></div>
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">Sponsors</a></div>
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">News</a></div>
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">Contact</a></div>
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">Privacy</a></div>
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">Licensing</a></div>
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">Legal</a></div>
+                <div class="col-md-6 col-sm-12 col-xs-6"><a href="">Privacy Policy</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12 ftr_social">
+            <div class="clearfix">
+              <h2>Connect With Us</h2>
+              <div class="ftr_mid_container clearfix">
+                <div class="pull-left social_icon"><a href=""><img src="images/ftr_facebook_icon.png" alt="facebook"></a></div>
+                <div class="pull-left social_icon"><a href=""><img src="images/ftr_twitter_icon.png" alt="twitter"></a></div>
+                <div class="pull-left social_icon"><a href=""><img src="images/ftr_v_icon.png" alt="v"></a></div>
+                <div class="pull-left social_icon"><a href=""><img src="images/ftr_you_tube_icon.png" alt="you_tube"></a></div>
+                <div class="pull-left social_icon"><a href=""><img src="images/ftr_in_icon.png" alt="in"></a></div>
+              </div>
+            </div>
+            <div class="clearfix sponsors_txt_view">
+              <h2>Sponsors</h2>
+              <div class="clearfix">
+                <div class="sponsors_txt">
+                  <p>If you are wanting to sponsor a team or donate to our non-profit organization, simply fill out the form "Contact Us" and we will get back to you with more details.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix text-center footer_botm_bg">
+      <div class="container">
+        <p>©2016 M6Rising Stars. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+$("#open-menu-click").click(function(){
+	$(".fullprofilediv").addClass("menu-open");
+});
+
+$("#open-inner-menu-click").click(function(){
+	$(".fullprofilediv").removeClass("menu-open");
+});
+</script>
+</body>
+</html>

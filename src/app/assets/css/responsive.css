@@ -1,0 +1,298 @@
+@media screen and (max-width:1199px) {
+	.top_ban_txt h1 {
+		font-size:28px;
+	}
+	.top_ban_txt p {
+		font-size:23px;
+	}
+	.video_btn > span.ban_btn_left_txt span.big_txt {
+		font-size:15px;
+		margin-top:2px;
+	}
+	.video_btn {
+		padding:5px 10px 5px 15px;
+	}
+	.ban_team_logo li {
+		width:30px;
+		height:30px;
+	}
+	.page_header .navbar-nav > li > a {
+		padding-left:5px;
+		padding-right:5px;
+		margin-left:5px;
+		margin-right:5px;
+	}
+	.video_btn > span.ban_btn_left_icon {
+		padding:2px 0 4px;
+		width:30px;
+	}
+	.video_btn > span.ban_btn_left_txt span.small_txt {
+		margin-top:-7px;
+	}
+	.ban_bg {
+		padding-top:45px;
+	}
+	.user_pic_margin {
+    margin-top: -90px;
+}
+.team_logo_txt {
+	padding: 6px 0;
+	font-size:20px;
+}
+
+
+
+
+
+/*----------------------------------------------*/
+
+.top_ban_txt.profile_ath .video_btn > span.ban_btn_left_txt span.big_txt {
+    margin: 7px 0 0;
+}
+.ban_bg.min_height_res {
+	min-height:330px;
+}
+}
+@media screen and (max-width:991px) {
+	.ban_team_logo li {
+    background-position: center center;
+    height: 20px;
+    margin: 2px 0;
+    width: 20px;
+}
+.page_header .navbar-nav > li > a {
+		padding-left:3px;
+		padding-right:3px;
+		margin-left:2px;
+		margin-right:2px;
+	}
+	.user_name_view {
+		font-size:20px;
+		line-height:56px;
+	}
+	.user_name_view span {
+		font-size:16px;
+	}
+	a.ban_btn {
+		margin-left:2px;
+		margin-right:2px;
+		font-size:13px;
+	}
+	.ftr_nav a {
+		margin-bottom:10px;
+	}
+	.social_icon {
+		width: 30px;
+	}
+	
+	
+	
+	.team_detail_top_logo {
+		width:100%;
+		text-align:center;
+	}
+	.team_detail_top_txt {
+    float: left;
+    margin: 0;
+    padding: 15px 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.page_middle_content .team_staff .team_staf_list .team_staf_list_view .team_staff_txt {
+	border-bottom:1px solid #c9c9c9;
+}
+
+
+
+
+
+/*******************************************/
+.user_name_view.ath_profile_team_name {
+    font-size: 15px;
+}
+.user_name_view.ath_profile_team_name span {
+    font-size: 13px;
+}
+.profile_top .athe_list_view {
+    padding-right: 15px;
+	margin-bottom:15px;
+}
+
+
+}
+@media screen and (max-width:767px) {
+.navbar-brand>img {
+    display: block;
+    width: 150px;
+    padding: 0 0 0 9px;
+}
+.header .navbar-inverse .navbar-collapse {
+    padding-top: 0;
+    padding-right: 15px;
+}
+.Search_btn_head {
+    right: 42px;
+    top: 10px;
+}
+.top_ban_txt {
+	text-align:center;
+}
+.ban_stick {
+    display: inline-block;
+    margin: -144px 20px 0;
+    min-height: 1220px;
+    width: 55px;
+}
+.ban_stick_box {
+    left: 0;
+}
+.video-xs-center {
+	text-align:center;
+}
+.user_pic_margin {
+    float: none;
+    margin: 15px auto;
+    width: 186px;
+}
+.menu-open .user_pic_margin {
+    margin-top: 15px;
+}
+
+.m6rank_txt {
+	margin-top:30px;
+}
+.ban_team_logo {
+	margin-bottom:25px;
+}
+.ban_team_logo li {
+    background-position: center center;
+    height: 38px;
+    margin: 2px 0;
+    width: 38px;
+}
+.ban_user_name_bg {
+	background:none;
+}
+.padding-xs-right-0 {
+	padding-right:0;
+}
+.user_name_view {
+	background-image:none;
+}
+.user_profile_top {
+	text-align:center;
+}
+.rating-xs-view {
+line-height: normal;
+    padding-bottom: 16px;
+    padding-left: 0;
+    text-align: center;
+}
+.ban_botm_bg {
+	padding-bottom:0;
+}
+.text-xs-center {
+	text-align:center;
+}
+.team_logo_txt {
+	margin-bottom:15px;
+}
+.h2, h2 {
+	font-size:25px;
+}
+.user-sub-menu li {
+	width:33%;
+	float:left;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+.page_middle_content .team_staff .team_staff_logo {
+	width:100%;
+}
+
+
+
+
+
+
+
+.team_staf_bg { margin: 15px auto; max-width: 350px; }
+}
+@media screen and (max-width:599px) {
+	.h2, h2 {
+		font-size:22px;
+	}
+	a.ban_btn {
+		width:110px;
+	}
+	
+	
+	.page_middle_content .team_staff .team_staff_name {
+		font-size:20px;
+	}
+	.page_middle_content .team_staff .team_staf_list .team_staf_list_head h3 {
+		font-size:16px;
+	}
+	
+	
+	
+	/*************************/
+	.user_name_view.ath_profile_team_name span {
+    display: block;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 0 0 12px;
+}
+}
+@media screen and (max-width:479px) {
+	a.ban_btn {
+		width:145px;
+	}
+	.list_date {
+		font-size: 55px;
+	}
+	.list_month_year {
+		font-size:20px;
+	}
+	.team_detail_top_txt h3 {
+		font-size:25px;
+	}
+	.team_detail_top_txt p {
+		font-size:20px;
+	}
+	.team_detail_con_top p {
+		font-size:15px;
+	}
+}
+
+
+ @media screen and (max-width: 450px) {
+.sidenav {
+	padding-top: 15px;
+}
+.sidenav a {
+	font-size: 18px;
+}
+}
+
+
+
+
+
+
