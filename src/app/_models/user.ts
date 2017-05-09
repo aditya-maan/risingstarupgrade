@@ -1,10 +1,4 @@
-﻿export class User {
-    id: number;
+﻿export class Userlogin {
     email: string;
     password: string;
-    firstName: string;
-    lastName: string;
-    dob: string;
-    gender: string;
-
 }

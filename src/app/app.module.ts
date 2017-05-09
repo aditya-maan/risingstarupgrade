@@ -1,4 +1,4 @@
-﻿import { NgModule }      from '@angular/core';
+﻿import { NgModule,enableProdMode }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -26,7 +26,7 @@ import { AthleteComponent } from './registration/Athlete/Athlete.component';
 
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 
-import { HeaderComponent }  from './home/header/header.components';
+// import { HeaderComponent }  from './home/header/header.components';
 import { FooterComponent }  from './home/footer/footer.components';
 import { ProfileComponent } from './profile/profile.component';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api'
@@ -38,7 +38,7 @@ import { NgProgressModule } from 'ng2-progressbar';
 import { NoopAnimationsModule  } from '@angular/platform-browser/animations';
 import { MyDatePickerModule } from 'mydatepicker';
 import {ImageUploadModule} from 'angular2-image-upload';
-
+enableProdMode();
 @NgModule({
     imports: [
         BrowserModule, NoopAnimationsModule , MdInputModule,
@@ -53,7 +53,9 @@ import {ImageUploadModule} from 'angular2-image-upload';
     entryComponents: [add_athleteComponent],
 
     declarations: [
-        AppComponent, HeaderComponent, FooterComponent,
+        AppComponent, 
+        // HeaderComponent, 
+        FooterComponent,
         AlertComponent, ProfileComponent,
         HomeComponent,
         LoginComponent, CoachComponent,AthleteComponent,add_athleteComponent, 

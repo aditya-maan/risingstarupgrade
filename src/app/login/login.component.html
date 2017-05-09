@@ -3,28 +3,36 @@
       <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 login_reg_mid">
-                    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
-                        <fieldset>
-                            <h2>Please Sign In</h2>
-                            <hr class="colorgraph">
-                            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
-                                <label for="email">Email</label>
-                                <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
-                                <div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
+                <form [formGroup]="loginForm" novalidate (ngSubmit)="login()">
+                    <fieldset>
+                        <h2>Please Sign In</h2>
+                        <hr class="colorgraph"/>
+                        <div class="form-group clearfixed">
+                            <div class="form-group">  
+                                <md-input-container class="col-sm-11">
+                                    <input mdInput formControlName="email" type="email" placeholder = "Email" />
+                                    <md-hint *ngIf="loginForm.hasError('required','email')" [ngStyle]="{'color': 'red'}" align="start">Email is required</md-hint>
+                                    <md-hint *ngIf="loginForm.hasError('pattern','email')" [ngStyle]="{'color': 'red'}" align="start">Email is formate</md-hint>
+                                </md-input-container>
+                            </div>    
+                              
+                            <div class="form-group"> 
+                                <md-input-container class="col-sm-11">
+                                    <input mdInput formControlName="password" type="password" placeholder = "Password"/>
+                                    <md-hint *ngIf="loginForm.hasError('required','password')" [ngStyle]="{'color': 'red'}" align="start">Password is required</md-hint>
+                                </md-input-container>
                             </div>
-                            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
-                                <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
-                            </div>
-                            <div class="form-group">
-                                <button [disabled]="loading" class="btn btn-primary">Login</button>
-                                <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-                                <a [routerLink]="['/register']" class="btn btn-link">Register</a>
-                            </div>
-                        </fieldset>
-                    </form>
-</div>
+                        </div>
+                        <div class="col-sm-6">
+                          <button md-raised-button color="primary" class="col-sm-12">LOGIN</button>
+                          <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                        </div>
+                        <div class="col-sm-6">
+                          <a md-raised-button routerLink="/register" class="col-sm-12">REGISTER</a>
+                        </div>
+                    </fieldset>
+                </form> 
+            </div>
         </div>
       </div>
   </div>

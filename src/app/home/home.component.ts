@@ -1,16 +1,16 @@
 ﻿import { Component, OnInit } from '@angular/core';
 
-import { User } from '../_models/index';
+import { Userlogin } from '../_models/index';
 import {  LocationService } from '../_services/index';
 
 @Component({
-   // moduleId: module.id,
+    //moduleId: module.id,
     templateUrl: 'app/home/home.component.html'
 })
 
 export class HomeComponent implements OnInit {
-    currentUser: User;
-    users: User[] = [];
+    currentUser: Userlogin;
+    users: Userlogin[] = [];
 
     constructor(private location: LocationService) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
